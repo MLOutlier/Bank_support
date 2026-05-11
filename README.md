@@ -31,11 +31,14 @@ chromadb (векторная база данных)
   - зарегистрируйтесь
   - создайте проект
   - запросите Authorization key
+  - 
 по итогу в .env должно быть примерно следующее:
+
 ```
 TOKEN=8502914049:AAEDhl1LGRMgk9t8E3vF3riEjOSzwcVWbGw
 API_KEY=MDE5YWY0ZDYtOWE2ZS03YzcyLWIwYjgtNTUwYWE3YmVhNmE3OjBjZDYwOGFjLTVlZTgtNGQ5Ni05NzZjLTVjY2M0NDVkZDYyMg==
 ```
+
 (API_KEY нужно вставить свой)
 
 2. установка 
