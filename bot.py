@@ -3,7 +3,7 @@ from telebot import types
 from langchain.schema import HumanMessage, SystemMessage
 from langchain_community.chat_models.gigachat import GigaChat
 
-# получение API_KEY и TOKEN из .env
+# получение API_KEY (GigaChat) и TOKEN (Telegram bot) из .env
 API_KEY = ""
 TOKEN = ""
 
@@ -65,7 +65,6 @@ SYSTEM_PROMPT = [
 """)
 ]
 
-# история пользователей
 users_history = {}
 
 
@@ -99,7 +98,7 @@ bot = telebot.TeleBot(TOKEN)
 
 # /start
 start_message = """
-Здравствуйте! Я — виртуальный помощник СберБанка.
+Здравствуйте! Я — виртуальный помощник юнибанка.
 Я могу помочь вам с банковскими вопросами.
 
 Чтобы начать, просто напишите свой вопрос.
@@ -140,7 +139,7 @@ def handle_text_message(user_message):
     kb.add(
         types.InlineKeyboardButton(
             text="Связаться с оператором",
-            url="https://t.me/demiun163"
+            url="https://t.me/MLOutlier"
         )
     )
 
